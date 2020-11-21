@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ParcialApp</string>
+    <string name="SeriePelicula">Nomre Serie/Pelicula</string>
+    <string name="aqui">Aqui escriba le nombre</string>
+    <string name="reco">Recomienda?</string>
+    <string name="guardar">Guardar Eleccion</string>
+    <string name="ver">Ver Recomendaciones</string>
 </resources>

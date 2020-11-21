@@ -6,13 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/LayouPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/NombreSeriePelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SeriePelicula" />
+
+        <EditText
+            android:id="@+id/editTextSeriePelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/aqui" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonRecomienda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reco"/>
+
+        <Button
+            android:id="@+id/buttonGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            android:enabled="true"/>
+
+        <Button
+            android:id="@+id/buttonVerRecos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ver" />
+
+        <ListView
+            android:id="@+id/listaRecos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
